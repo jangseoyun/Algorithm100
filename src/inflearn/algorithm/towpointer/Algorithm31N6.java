@@ -18,9 +18,9 @@ public class Algorithm31N6 {
             while (cnt > k) {
                 if (arr[lt] == 0){
                     cnt--; //차감하고 lt 이동
-                    lt++;
                     System.out.println("lt: "+arr[lt]);
                 }
+                lt++;
                 System.out.println("while: "+answer);
             }
             answer = Math.max(answer, rt - lt + 1);
