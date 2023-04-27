@@ -9,7 +9,7 @@ public class Algorithm45N1 {
 
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] > arr[j]) {
+                if (arr[i] > arr[j]) {
                     tmp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = tmp;
