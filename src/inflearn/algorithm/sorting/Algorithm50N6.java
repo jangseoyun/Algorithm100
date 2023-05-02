@@ -1,17 +1,15 @@
 package inflearn.algorithm.sorting;
 
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 public class Algorithm50N6 {
-    public Stack<Integer> solution(int n, int[] arr) {
-        Stack<Integer> answer = new Stack<>();
+    public List<Integer> solution(int n, int[] arr) {
+        List<Integer> answer = new ArrayList<>();
         int[] tmp = arr.clone();
         Arrays.sort(tmp);
         for (int i = 0; i < n; i++) {
             if (arr[i] != tmp[i]) {
-                answer.push(i + 1);
+                answer.add(i + 1);
             }
         }
         System.out.println(answer);
