@@ -12,7 +12,7 @@ public class Algorithm7N12 {
             answer++;
         } else {//출발지점에서 다른 노드를 도는 것.
             for (int i = 1; i <= n; i++) {
-                if (graph[v][i] == 1 && ch[i] == 0) {
+                if (graph[v][i] == 1 && ch[i] == 0) {//v번 정점에서 갈 수 있는 i번 정점을 다 찾아보는 것
                     ch[i] = 1;
                     dfs(i);//i로 이동해야한다
                     ch[i] = 0; //백트레킹하면서 체크 풀어주기
